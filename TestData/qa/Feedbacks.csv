@@ -1,0 +1,6 @@
+${forename};${email};${message};
+John;john.doe@example.com;This is a test 1;
+Jane;jane.doe@example.com;This is a test 2;
+Jack;jack.doe@example.com;This is a test 3;
+Jill;jill.doe@example.com;This is a test 4;
+Sam;sam.doe@example.com;This is a test 5;
