@@ -47,7 +47,6 @@ successful message should appear for user: ${user}
     element should be visible   ${alertSuccessMessage}
     ${message}=     get success message for     ${user}
     element should contain  ${alertSuccessMessage}    ${message}
-#    element should contain  ${alertSuccessMessage}    get success message for     ${user}
 
 get success message for
     [Arguments]    ${user}

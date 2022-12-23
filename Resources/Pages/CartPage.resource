@@ -10,6 +10,7 @@ user validates subtotal for each product
 
 subtotal for each product should be correct
     ${subtotalList}=    create list
+    @{shoppingList}=    get variable value  $shoppingList
     FOR    ${product}   IN    @{shoppingList}
         ${productName}=     convert to string    ${product}[\$\{productName\}]
         ${cartPageSubtotal}=  get price value   ${productName}  ${cartProductSubtotalXpath}
@@ -25,6 +26,7 @@ user validates price for each product
 
 
 price for each product should be correct
+    @{shoppingList}=    get variable value  $shoppingList
     FOR    ${product}   IN    @{shoppingList}
         ${productName}=     convert to string    ${product}[\$\{productName\}]
         ${cartPagePrice}=   get price value   ${productName}  ${cartProductPriceXpath}
@@ -37,6 +39,7 @@ user validates the total amount
 
 total amount should be the sum of subtotals
     ${totalAmount}=     get total
+    ${subtotalList}=    get variable value  $subtotalList
     ${sumOfSubtotals}=  evaluate    sum(map(float, ${subtotalList}))
     should be equal     ${totalAmount}  ${sumOfSubtotals}
 
