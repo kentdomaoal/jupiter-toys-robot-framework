@@ -1,6 +1,14 @@
 # jupiter-toys-robot-framework
 Sample Test automation using Robot Framework
 
+Uses BDD format in Test Cases
+
+    *** Test Cases ***
+    Navigating to a Page
+      Given a user opens an application
+      When user navigates to a page
+      Then page should load properly
+
 HTML Report is auto-generated or you can generate it via Allure-report.
 
 ## How to run in local machine
