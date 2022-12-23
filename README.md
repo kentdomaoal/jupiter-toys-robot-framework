@@ -24,7 +24,7 @@ HTML Report is auto-generated or you can generate it via Allure-report.
 ### 3. Run the test
   (a) Run with default HTML report
 
-        robot --variablefile Resources/Config/robot-config-qa.py -d results --name Tests TestCases\*Test*.robot
+        robot --variablefile Resources/Config/robot-config-qa.py -d results --name Tests TestCases/*Test*.robot
 
   (b) Run with Allure report
 
