@@ -3,18 +3,20 @@ Sample Test automation using Robot Framework
 
 Uses BDD format in Test Cases
 
+```Gherkin
     *** Test Cases ***
     Navigating to a Page
       Given a user opens an application
       When user navigates to a page
       Then page should load properly
+```
 
 HTML Report is auto-generated or you can generate it via Allure-report.
 
 ## How to run in local machine
 
 - ## 💻 Pre-requisites
-  - Git Bash
+  - Git
   - Python 3 or higher
   - Allure commandline for Allure report viewing
 
